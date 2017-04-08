@@ -4,10 +4,8 @@ package javapracticeproblems;
 
 public class JavaPracticeProblems {
 
-    /**
-     * @param args the command line arguments
-     */
+    // main loop
     public static void main(String[] args) {
-        System.out.println(Warmups.stringMult("Hey", 5));
+        System.out.println(Recursion.array220([1,2,20], 0));
     }
 }
