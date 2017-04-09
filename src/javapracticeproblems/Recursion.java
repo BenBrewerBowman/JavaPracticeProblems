@@ -39,5 +39,12 @@ public class Recursion {
         return(groupSum(start + 1, nums, target));
     }
 
-       
+    public boolean groupSum5(int start, int[] nums, int target) {
+        if(start >= nums.length) {
+            return target == 0;
+        }
+        if(nums[start]%5 == 0) return groupSum5(start+1, nums, target - nums[start]);
+        if (groupSum5(start+1, nums, target - nums[start])) return true;
+        return groupSum5(start+1, nums, target);
+    }
 }
